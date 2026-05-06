@@ -1,0 +1,13 @@
+===== Aggregate Results =====
+  j2j         : 0.0148
+  j2b         : 0.0102
+  b2b         : 0.0111
+  iou         : 0.9259
+  precision   : 0.9623
+  recall      : 0.9804
+
+  Evaluated : 1
+  Skipped   : 0
+  Avg infer : 10.90s/sample
+
+Per-sample results saved to: outputs/debug_medial\results.csv

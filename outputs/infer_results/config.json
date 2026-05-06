@@ -1,0 +1,21 @@
+{
+    "input_pc_num": 8192,
+    "num_beams": 1,
+    "input_dir": null,
+    "input_path": null,
+    "output_dir": "outputs",
+    "llm": "facebook/opt-350m",
+    "pad_id": -1,
+    "n_discrete_size": 128,
+    "n_max_bones": 100,
+    "dataset_path": "combine_256_updated",
+    "seed": 0,
+    "precision": "fp16",
+    "batchsize_per_gpu": 1,
+    "pretrained_weights": null,
+    "save_name": "infer_results",
+    "save_render": false,
+    "apply_marching_cubes": false,
+    "octree_depth": 7,
+    "hier_order": false
+}

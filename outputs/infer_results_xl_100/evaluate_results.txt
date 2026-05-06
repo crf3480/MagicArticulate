@@ -1,0 +1,32 @@
+===== Aggregate Results =====
+  j2j         : 0.0250
+  j2b         : 0.0172
+  b2b         : 0.0159
+  iou         : 0.8564
+  precision   : 0.9152
+  recall      : 0.8973
+
+  Evaluated : 50
+  Skipped   : 0
+  Avg infer : 8.13s/sample
+
+Per-sample results saved to: outputs/data/infer_results_xl_100\results.csv
+
+===== Per-Category Results =====
+category_label                               j2j         j2b         b2b         iou   precision      recall     n
+anatomy                                 0.040466    0.020187    0.010520    0.500000    0.700000    0.636364     1
+animal                                  0.053495    0.044624    0.035477    0.573286    0.644986    0.721491     3
+animal, anthropomorphic                 0.010662    0.008676    0.007981    1.000000    1.000000    1.000000     2
+animal, mythical creature               0.019836    0.015893    0.016435    0.894737    0.952381    0.944444     1
+anthropomorphic                         0.017822    0.013233    0.011693    0.878788    0.925926    0.928571     3
+anthropomorphic, toy                    0.034378    0.018449    0.014161    0.687500    0.875000    0.714286     2
+character                               0.009889    0.007244    0.007259    0.998549    1.000000    0.998575    13
+character, anthropomorphic              0.015106    0.010803    0.009746    0.922507    0.974109    0.951735    12
+character, anthropomorphic, weapon      0.007904    0.007181    0.006820    1.000000    1.000000    1.000000     1
+character, scanned data                 0.012711    0.008838    0.008601    0.958333    0.976190    0.980769     3
+electronic device                       0.093140    0.057100    0.066272    0.356643    0.666667    0.363636     2
+household item                          0.205444    0.125791    0.101354    0.022222    0.160000    0.333333     1
+mythical creature, anatomy              0.029785    0.026580    0.022887    0.733333    0.916667    0.785714     1
+mythical creature, anthropomorphic      0.012451    0.010162    0.009608    1.000000    1.000000    1.000000     2
+sculpture, miscellaneous                0.047821    0.029810    0.032397    0.538462    0.700000    0.863636     1
+toy, anthropomorphic                    0.017376    0.011698    0.014287    0.879310    0.958333    0.926471     2

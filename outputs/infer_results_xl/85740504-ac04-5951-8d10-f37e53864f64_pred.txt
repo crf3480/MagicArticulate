@@ -1,0 +1,6 @@
+joints joint0 -0.50000590 -0.07028661 0.00000000
+joints joint1 0.49218947 -0.21092090 0.00000000
+joints joint2 0.49218947 -0.07028661 0.00000000
+root joint2
+hier joint2 joint0
+hier joint0 joint1

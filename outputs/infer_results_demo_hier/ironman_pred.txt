@@ -1,0 +1,82 @@
+joints joint0 -0.09984079 0.23503624 -0.11831158
+joints joint1 -0.09984079 0.23503624 -0.09530889
+joints joint2 -0.09217323 0.16614799 0.11147564
+joints joint3 -0.08450567 0.22736868 -0.04172582
+joints joint4 -0.08450567 0.24270380 -0.12597914
+joints joint5 -0.08450567 0.24270380 -0.10297646
+joints joint6 -0.06923045 0.25037137 -0.10297646
+joints joint7 -0.06923045 0.25803891 -0.12597914
+joints joint8 -0.06156289 0.22736868 -0.05703099
+joints joint9 -0.05389533 -0.12497970 -0.43232214
+joints joint10 -0.05389533 0.25803891 -0.12597914
+joints joint11 -0.05389533 0.25803891 -0.10297646
+joints joint12 -0.04622777 0.05886205 -0.43998972
+joints joint13 -0.04622777 0.23503624 -0.08003367
+joints joint14 -0.03092260 0.12781020 0.27237460
+joints joint15 -0.00793489 0.10480751 -0.49366266
+joints joint16 -0.00027482 0.05119449 0.29537728
+joints joint17 0.00738525 0.01290910 0.31071243
+joints joint18 0.01504533 -0.18620038 0.11914320
+joints joint19 0.01504533 -0.04069644 0.29537728
+joints joint20 0.01504533 0.06652961 -0.00341797
+joints joint21 0.02270540 -0.13264726 -0.49366266
+joints joint22 0.02270540 0.00524902 -0.00341797
+joints joint23 0.02270540 0.00524902 0.05019505
+joints joint24 0.02270540 0.00524902 0.17281613
+joints joint25 0.02270540 0.01290910 0.34905022
+joints joint26 0.02270540 0.09713995 -0.21020250
+joints joint27 0.03035798 -0.12497970 0.27237460
+joints joint28 0.03035798 -0.05603156 -0.00341797
+joints joint29 0.03802555 -0.08664190 -0.21020250
+joints joint30 0.04569311 -0.26287600 -0.10297646
+joints joint31 0.04569311 -0.25520843 -0.08770124
+joints joint32 0.06099828 -0.23987332 -0.02639070
+joints joint33 0.06866584 -0.25520843 -0.11064401
+joints joint34 0.06866584 -0.25520843 -0.09530889
+joints joint35 0.07633340 -0.22453819 -0.04936343
+joints joint36 0.08400096 -0.25520843 -0.11831158
+joints joint37 0.08400096 -0.25520843 -0.09530889
+joints joint38 0.08400096 -0.21687064 -0.07236611
+joints joint39 0.09166852 -0.24754086 -0.08770124
+joints joint40 0.09927618 -0.24754086 -0.11064401
+root joint22
+hier joint22 joint23
+hier joint23 joint28
+hier joint23 joint20
+hier joint23 joint24
+hier joint28 joint29
+hier joint20 joint26
+hier joint24 joint17
+hier joint29 joint9
+hier joint26 joint12
+hier joint17 joint19
+hier joint17 joint16
+hier joint17 joint25
+hier joint9 joint21
+hier joint12 joint15
+hier joint19 joint27
+hier joint16 joint14
+hier joint27 joint18
+hier joint14 joint2
+hier joint18 joint32
+hier joint2 joint3
+hier joint32 joint34
+hier joint32 joint37
+hier joint32 joint31
+hier joint32 joint39
+hier joint32 joint35
+hier joint3 joint5
+hier joint3 joint6
+hier joint3 joint11
+hier joint3 joint1
+hier joint3 joint8
+hier joint34 joint33
+hier joint37 joint36
+hier joint31 joint30
+hier joint39 joint40
+hier joint35 joint38
+hier joint5 joint4
+hier joint6 joint7
+hier joint11 joint10
+hier joint1 joint0
+hier joint8 joint13

@@ -1,0 +1,12 @@
+data/
+skeleton_ckpt/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.venv312/
+.idea/
+.claude/
+MagicArticulate/
+*.pdf
+notes.txt
