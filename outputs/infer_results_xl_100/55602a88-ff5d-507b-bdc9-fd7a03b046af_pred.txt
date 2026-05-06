@@ -1,0 +1,80 @@
+joints joint0 -0.46092382 0.26551363 -0.05468433
+joints joint1 -0.46092382 0.26551363 -0.04686792
+joints joint2 -0.46092382 0.26551363 -0.03905151
+joints joint3 -0.46092382 0.26551363 -0.03125037
+joints joint4 -0.43747461 0.26551363 -0.05468433
+joints joint5 -0.43747461 0.26551363 -0.04686792
+joints joint6 -0.43747461 0.26551363 -0.03905151
+joints joint7 -0.43747461 0.26551363 -0.03125037
+joints joint8 -0.41402540 0.25769722 -0.01562518
+joints joint9 -0.38275975 0.26551363 -0.03905151
+joints joint10 -0.23437013 0.26551363 -0.04686792
+joints joint11 -0.12500148 -0.49218947 0.03125037
+joints joint12 -0.11718506 -0.43747461 -0.05468433
+joints joint13 -0.09373584 -0.24218653 -0.03905151
+joints joint14 -0.09373584 0.26551363 -0.04686792
+joints joint15 -0.05468433 -0.00781259 -0.04686792
+joints joint16 -0.03905151 0.26551363 -0.04686792
+joints joint17 0.00000000 0.02343396 -0.04686792
+joints joint18 0.00000000 0.06250074 -0.04686792
+joints joint19 0.00000000 0.14057322 -0.04686792
+joints joint20 0.00000000 0.22655371 -0.04686792
+joints joint21 0.00000000 0.30459568 -0.04686792
+joints joint22 0.00000000 0.36712694 -0.04686792
+joints joint23 0.03125037 0.26551363 -0.04686792
+joints joint24 0.04686792 -0.00781259 -0.04686792
+joints joint25 0.08591942 -0.24218653 -0.03905151
+joints joint26 0.08591942 0.26551363 -0.04686792
+joints joint27 0.10936865 -0.43747461 -0.05468433
+joints joint28 0.11718506 -0.49218947 0.03125037
+joints joint29 0.22655371 0.26551363 -0.04686792
+joints joint30 0.37494335 0.26551363 -0.03905151
+joints joint31 0.40620896 0.25769722 -0.01562518
+joints joint32 0.42965820 0.26551363 -0.05468433
+joints joint33 0.42965820 0.26551363 -0.04686792
+joints joint34 0.42965820 0.26551363 -0.03905151
+joints joint35 0.42965820 0.26551363 -0.03125037
+joints joint36 0.45310742 0.26551363 -0.05468433
+joints joint37 0.45310742 0.26551363 -0.04686792
+joints joint38 0.45310742 0.26551363 -0.03905151
+joints joint39 0.45310742 0.26551363 -0.03125037
+root joint17
+hier joint17 joint15
+hier joint17 joint24
+hier joint17 joint18
+hier joint15 joint13
+hier joint24 joint25
+hier joint18 joint19
+hier joint13 joint12
+hier joint25 joint27
+hier joint19 joint20
+hier joint12 joint11
+hier joint27 joint28
+hier joint20 joint16
+hier joint20 joint23
+hier joint20 joint21
+hier joint16 joint14
+hier joint23 joint26
+hier joint21 joint22
+hier joint14 joint10
+hier joint26 joint29
+hier joint10 joint9
+hier joint29 joint30
+hier joint9 joint4
+hier joint9 joint5
+hier joint9 joint6
+hier joint9 joint7
+hier joint9 joint8
+hier joint30 joint32
+hier joint30 joint33
+hier joint30 joint34
+hier joint30 joint35
+hier joint30 joint31
+hier joint4 joint0
+hier joint5 joint1
+hier joint6 joint2
+hier joint7 joint3
+hier joint32 joint36
+hier joint33 joint37
+hier joint34 joint38
+hier joint35 joint39

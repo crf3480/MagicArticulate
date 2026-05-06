@@ -1,0 +1,60 @@
+joints joint0 -0.46092382 0.04686792 -0.00781259
+joints joint1 -0.42184180 0.04686792 -0.00781259
+joints joint2 -0.41402540 0.09373584 -0.00781259
+joints joint3 -0.39839256 0.07810302 -0.00781259
+joints joint4 -0.35931054 0.04686792 -0.00781259
+joints joint5 -0.21873730 0.04686792 -0.00781259
+joints joint6 -0.17965527 -0.20310448 -0.01562518
+joints joint7 -0.09373584 -0.28896284 -0.01562518
+joints joint8 -0.08591942 0.04686792 -0.01562518
+joints joint9 -0.03125037 -0.21873730 -0.01562518
+joints joint10 -0.00781259 -0.20310448 -0.19528808
+joints joint11 -0.00781259 -0.20310448 0.16402245
+joints joint12 0.00000000 -0.28896284 -0.10936865
+joints joint13 0.00000000 -0.28896284 0.07810302
+joints joint14 0.00000000 -0.21873730 -0.03905151
+joints joint15 0.00000000 -0.21873730 0.00781259
+joints joint16 0.00000000 -0.20310448 -0.01562518
+joints joint17 0.00000000 -0.07028661 -0.01562518
+joints joint18 0.00000000 0.00781259 -0.02343396
+joints joint19 0.00000000 0.11718506 -0.03125037
+joints joint20 0.02343396 -0.21873730 -0.01562518
+joints joint21 0.08591942 -0.28896284 -0.01562518
+joints joint22 0.08591942 0.04686792 -0.01562518
+joints joint23 0.17183885 -0.20310448 -0.01562518
+joints joint24 0.21092090 0.04686792 -0.00781259
+joints joint25 0.35149410 0.04686792 -0.00781259
+joints joint26 0.39057615 0.07810302 -0.00781259
+joints joint27 0.40620896 0.09373584 -0.00781259
+joints joint28 0.41402540 0.04686792 -0.00781259
+joints joint29 0.45310742 0.04686792 -0.00781259
+root joint16
+hier joint16 joint14
+hier joint16 joint9
+hier joint16 joint20
+hier joint16 joint17
+hier joint16 joint15
+hier joint14 joint12
+hier joint9 joint7
+hier joint20 joint21
+hier joint17 joint18
+hier joint15 joint13
+hier joint12 joint10
+hier joint7 joint6
+hier joint21 joint23
+hier joint18 joint19
+hier joint18 joint8
+hier joint18 joint22
+hier joint13 joint11
+hier joint8 joint5
+hier joint22 joint24
+hier joint5 joint4
+hier joint24 joint25
+hier joint4 joint1
+hier joint4 joint3
+hier joint25 joint28
+hier joint25 joint26
+hier joint1 joint0
+hier joint3 joint2
+hier joint28 joint29
+hier joint26 joint27

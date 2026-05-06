@@ -1,0 +1,23 @@
+{
+    "input_pc_num": 8192,
+    "num_beams": 3,
+    "llm": "facebook/opt-350m",
+    "pad_id": -1,
+    "n_discrete_size": 128,
+    "n_max_bones": 100,
+    "dataset_path": "data/Articulation_xlv2_test.npz",
+    "output_dir": "outputs",
+    "save_name": "data/final_full_run",
+    "save_render": false,
+    "seed": 0,
+    "precision": "fp16",
+    "batchsize_per_gpu": 1,
+    "pretrained_weights": "skeleton_ckpt/checkpoint_trainonv2_hier.pth",
+    "hier_order": true,
+    "max_samples": 2000,
+    "threshold": 0.05,
+    "metadata_path": "data/meta_Articulation_XL_2.0.csv",
+    "use_medial_axis": false,
+    "snap_dist": 0.05,
+    "medial_grid_size": 64
+}
