@@ -15,7 +15,8 @@ from pyrender import (
     RenderFlags
 )
 
-os.environ["PYOPENGL_PLATFORM"] = "egl"
+if os.name != "nt":
+    os.environ["PYOPENGL_PLATFORM"] = "egl"
 
 def look_at(eye, center, up):
     """Create a look-at (view) matrix."""

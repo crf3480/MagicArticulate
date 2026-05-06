@@ -1,3 +1,6 @@
 [submodule "third_partys/Michelangelo"]
 	path = third_partys/Michelangelo
 	url = https://github.com/ChaoyueSong/Michelangelo/
+[submodule "MagicArticulate"]
+	path = MagicArticulate
+	url = https://github.com/crf3480/MagicArticulate

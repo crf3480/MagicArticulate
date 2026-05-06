@@ -21,7 +21,6 @@ import pickle
 from concurrent.futures import ProcessPoolExecutor
 import skimage.measure
 import trimesh
-import mesh2sdf.core
 import scipy.sparse as sp
 
 def read_obj_file(file_path):
@@ -156,6 +155,7 @@ def export_to_watertight(normalized_mesh, octree_depth: int = 7):
 
     scaled_vertices, to_orig_center, to_orig_scale = normalize_vertices(normalized_mesh.vertices)
 
+    import mesh2sdf.core
     sdf = mesh2sdf.core.compute(scaled_vertices, normalized_mesh.faces, size=size)
 
     vertices, faces, normals, _ = skimage.measure.marching_cubes(np.abs(sdf), level)

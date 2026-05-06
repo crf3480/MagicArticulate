@@ -302,7 +302,11 @@ class ShapeOPTDecoder(OPTDecoder):
             assert attention_mask is not None
             causal_attention_mask = attention_mask if 0 in attention_mask else None
         else:
-            raise ValueError("Only flash_attention_2 is supported")
+            # Standard eager/sdpa attention path — build a 4D additive causal mask
+            from transformers.modeling_attn_mask_utils import _prepare_4d_causal_attention_mask
+            causal_attention_mask = _prepare_4d_causal_attention_mask(
+                attention_mask, inputs_embeds.shape[:2], inputs_embeds, past_key_values_length
+            )
 
         pos_embeds = self.embed_positions(attention_mask, past_key_values_length)
 

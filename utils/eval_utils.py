@@ -48,10 +48,43 @@ def sample_skel(joints, bones):
         ch_pos = joints[child_idx]
         res = sample_bone(p_pos, ch_pos)
         bone_sample.append(res)
-    
+
     if bone_sample:
         bone_sample = np.concatenate(bone_sample, axis=0)
     else:
         bone_sample = np.empty((0, 3))
-    
+
     return bone_sample
+
+
+def joint_matching_metrics(pred_joints, gt_joints, threshold=0.05):
+    """
+    Precision, recall, and IoU based on joint proximity matching.
+    A predicted joint is a true positive if its nearest GT joint is within `threshold`.
+    A GT joint is recalled if its nearest predicted joint is within `threshold`.
+    """
+    if len(pred_joints) == 0 or len(gt_joints) == 0:
+        return 0.0, 0.0, 0.0
+
+    # pairwise distances
+    diff = pred_joints[:, np.newaxis, :] - gt_joints[np.newaxis, :, :]  # (P, G, 3)
+    dists = np.sqrt((diff ** 2).sum(axis=2))  # (P, G)
+
+    # precision: fraction of predicted joints matched to some GT joint
+    tp_pred = (dists.min(axis=1) < threshold).sum()
+    precision = tp_pred / len(pred_joints)
+
+    # recall: fraction of GT joints matched by some predicted joint
+    tp_gt = (dists.min(axis=0) < threshold).sum()
+    recall = tp_gt / len(gt_joints)
+
+    # IoU = TP / (TP + FP + FN)
+    # Use the conservative (min) TP estimate to avoid double-counting when
+    # multiple predicted joints map to the same GT joint (many-to-one matching).
+    tp = min(tp_pred, tp_gt)
+    fp = int(len(pred_joints)) - int(tp_pred)
+    fn = int(len(gt_joints))   - int(tp_gt)
+    denom = tp + fp + fn
+    iou = tp / denom if denom > 0 else 0.0
+
+    return float(iou), float(precision), float(recall)

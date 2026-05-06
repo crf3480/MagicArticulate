@@ -1,5 +1,4 @@
 # Modified from https://github.com/buaacyw/MeshAnything
-import mesh2sdf.core
 import numpy as np
 import skimage.measure
 import trimesh
@@ -36,6 +35,7 @@ class MeshProcessor:
         normalized_vertices, original_center, original_scale = MeshProcessor.normalize_mesh_vertices(mesh.vertices)
         
         # Compute signed distance field
+        import mesh2sdf.core
         sdf = mesh2sdf.core.compute(normalized_vertices, mesh.faces, size=grid_size)
         
         # Run marching cubes algorithm

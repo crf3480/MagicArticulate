@@ -50,7 +50,7 @@ class SkeletonGPT(nn.Module):
             n_positions=self.max_length,
             max_position_embeddings=self.max_length,
             vocab_size = vocab_size,
-            _attn_implementation="flash_attention_2"
+            _attn_implementation="eager"
         )
 
         self.bos_token_id = 0
@@ -60,16 +60,16 @@ class SkeletonGPT(nn.Module):
         self.config.bos_token_id = self.bos_token_id
         self.config.eos_token_id = self.eos_token_id
         self.config.pad_token_id = self.pad_token_id
-        self.config._attn_implementation ="flash_attention_2"
+        self.config._attn_implementation = "eager"
         self.config.n_discrete_size = self.n_discrete_size
         self.config.bone_per_token = self.bone_per_token
         self.config.cond_length = self.cond_length
 
         self.config.word_embed_proj_dim = self.config.hidden_size # 1024
-        
-       
+
+
         self.transformer = AutoModelForCausalLM.from_config(
-            config=self.config, attn_implementation="flash_attention_2")
+            config=self.config, attn_implementation="eager")
         
         self.cond_head_proj = nn.Linear(self.cond_dim, self.config.word_embed_proj_dim)
         self.cond_proj = nn.Linear(self.cond_dim, self.config.word_embed_proj_dim)
